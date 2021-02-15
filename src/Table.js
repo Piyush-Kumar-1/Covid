@@ -24,6 +24,8 @@ export const Table = () => {
   if (data) {
     data.sort((a, b) => parseInt(a.active) - parseInt(b.active));
     data.reverse();
+    const data1 = [...data];
+    data1.shift();
     return (
       <div className="table">
         <div className="table__header">
@@ -34,7 +36,7 @@ export const Table = () => {
           <h3>deceased</h3>
         </div>
 
-        {data.map((item) => (
+        {data1.map((item) => (
           <p className="table__details" key={item.statecode}>
             <span>{item.state}</span> <p>{item.confirmed}</p>
             <p>{item.active}</p> <p>{item.recovered}</p> <p>{item.deaths}</p>
