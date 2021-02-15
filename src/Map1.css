@@ -1,0 +1,61 @@
+.map1__map {
+  display: "inline-block";
+  width: "50vw";
+  padding-bottom: "100%";
+  vertical-align: "top";
+  overflow: "hidden";
+}
+
+.map1 {
+  background-color: aquamarine;
+}
+
+.details {
+  display: flex;
+  margin-top: 20px;
+}
+
+.confirmed {
+  background-color: rgb(245, 216, 216);
+  color: red;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  min-width: 40px;
+  max-height: 70px;
+  max-width: 130px;
+  font-size: 15px;
+}
+.active {
+  background-color: rgb(201, 201, 241);
+  color: blue;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  min-height: 30px;
+  font-size: 15px;
+  max-height: 70px;
+  max-width: 130px;
+}
+.recovered {
+  background-color: rgb(195, 248, 195);
+  color: green;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  max-height: 70px;
+  max-width: 130px;
+  min-width: 35px;
+}
+.deceased {
+  background-color: lightgray;
+  color: gray;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  min-width: 30px;
+  font-size: 15px;
+  max-height: 70px;
+  max-width: 130px;
+}

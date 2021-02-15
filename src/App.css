@@ -1,0 +1,43 @@
+.app {
+  display: flex;
+}
+
+.app__left {
+  width: 50vw;
+  min-width: 650px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.chart {
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.app__right {
+  width: 50vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+@media all and (max-width: 900px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+  .app__left {
+    width: 100vw;
+  }
+  .chart {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .app__right {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+  }
+}
