@@ -28,7 +28,7 @@
   min-width: 40px;
   max-height: 70px;
   max-width: 130px;
-  font-size: 15px;
+  font-size: 1em;
 }
 .active {
   background-color: rgb(201, 201, 241);
