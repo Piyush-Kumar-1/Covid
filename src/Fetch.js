@@ -38,7 +38,7 @@ export const Fetch = () => {
         last7.map(
           (item) => (
             deceased7.push(parseInt(item.dailydeceased)),
-            recovered7.push(parseInt(item.dailyrecovered)),
+            recovered7.push(parseInt(item.totalrecovered)),
             active7.push(
               item.totalconfirmed - item.totaldeceased - item.totalrecovered
             )

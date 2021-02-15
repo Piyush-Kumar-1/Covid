@@ -6,6 +6,7 @@ import { useStateValue } from "./StateProvider";
 export const LineChart = () => {
   const [{ active7, recovered7, deceased7 }, dispatch] = useStateValue();
   if (active7) {
+    console.log(recovered7, active7, deceased7);
     const data = {
       labels: ["", "", "", "", "", "", ""],
       datasets: [
@@ -20,7 +21,8 @@ export const LineChart = () => {
             deceased7[5],
             deceased7[6],
           ],
-          borderColor: ["rgba(0,0,0,0)"],
+          borderColor: ["grey"],
+          pointBackgroundColor: ["grey"],
         },
         {
           label: "recovered",
@@ -35,6 +37,7 @@ export const LineChart = () => {
           ],
           borderColor: ["green"],
           backgroundColor: ["white"],
+          pointBackgroundColor: ["green"],
         },
         {
           label: "active",
@@ -49,13 +52,21 @@ export const LineChart = () => {
           ],
           borderColor: ["red"],
           backgroundColor: ["white"],
+          pointBackgroundColor: ["red"],
+          pointBorderColor: ["red"],
         },
       ],
     };
 
     const options = {
-      label: {
-        display: false,
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              stepSize: 1000000,
+            },
+          },
+        ],
       },
     };
     return (

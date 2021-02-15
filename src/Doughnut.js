@@ -10,7 +10,6 @@ export const Doughnut1 = () => {
       labels: ["active", "deceased", "recovered"],
       datasets: [
         {
-          label: "sales for 2020",
           data: [active, deceased, recovered],
           backgroundColor: [
             "rgba(0, 0, 0, 0.6)",
