@@ -1,3 +1,7 @@
+.container {
+  border-left: 1px solid lightgray;
+}
+
 .map1__map {
   display: "inline-block";
   width: "50vw";
@@ -12,7 +16,7 @@
 
 .details {
   display: flex;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .confirmed {
