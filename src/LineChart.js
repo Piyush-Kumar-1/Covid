@@ -6,7 +6,6 @@ import { useStateValue } from "./StateProvider";
 export const LineChart = () => {
   const [{ active7, recovered7, deceased7 }, dispatch] = useStateValue();
   if (active7) {
-    console.log(recovered7, active7, deceased7);
     const data = {
       labels: ["", "", "", "", "", "", ""],
       datasets: [
